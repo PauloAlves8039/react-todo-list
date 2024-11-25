@@ -1,8 +1,23 @@
-# React + Vite
+<h1 align="center">To-Do List</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## :computer: Project
 
-Currently, two official plugins are available:
+This project simulate a `to-do list`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✔️ Resources Used
+
+- `HTML`
+- `CSS`
+- `React`
+- `Vite`
+
+## :floppy_disk: Clone Repository
+
+```bash
+git clone https://github.com/PauloAlves8039/dotnet-microservices-ecommerce.git
+```
+
+## :boy: Author
+
+<a href="https://github.com/PauloAlves8039"><img src="https://avatars.githubusercontent.com/u/57012714?v=4" width=70></a>
+[Paulo Alves](https://github.com/PauloAlves8039)
