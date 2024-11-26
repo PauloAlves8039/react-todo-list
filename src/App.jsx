@@ -2,7 +2,48 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  return <div>To-Do List</div>
+  
+  const [todos, setTodos] = useState([
+    {
+      id:1,
+      text: "criar funcionalidade x no sistema",
+      category: "Trabalho",
+      isCompleted: false,
+    },
+    {
+      id:2,
+      text: "Ir pra academia",
+      category: "Pessoal",
+      isCompleted: false,
+    },
+    {
+      id:3,
+      text: "Estudar React",
+      category: "Estudos",
+      isCompleted: false,
+    }
+  ]);
+
+  return <div className="app">
+    <h1>To-Do List</h1>
+
+    <div className="todo-list">
+      {todos.map((todo) => (
+        <div className="todo">
+          <div className="content">
+            <p>{todo.text}</p>
+          </div>
+          <div className="category">
+            <p>({todo.category})</p>
+          </div>
+          <div>
+            <button>Complete</button>
+            <button>X</button>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
 }
 
 export default App
