@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Todo from './components/Todo';
 import './App.css'
 
 function App() {
@@ -29,20 +30,10 @@ function App() {
 
     <div className="todo-list">
       {todos.map((todo) => (
-        <div className="todo">
-          <div className="content">
-            <p>{todo.text}</p>
-          </div>
-          <div className="category">
-            <p>({todo.category})</p>
-          </div>
-          <div>
-            <button>Complete</button>
-            <button>X</button>
-          </div>
-        </div>
+        <Todo todo={todo} />
       ))}
     </div>
+    
   </div>
 }
 
