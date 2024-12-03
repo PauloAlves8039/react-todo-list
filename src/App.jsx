@@ -62,7 +62,7 @@ function App() {
   };
 
   return <div className="app">
-    <h1>To-Do List</h1>
+    <h1 class="title-color">To-Do List</h1>
 
     <Search search={search} setSearch={setSearch} />
     <Filter filter={filter} setFilter={setFilter} setSort={setSort} />

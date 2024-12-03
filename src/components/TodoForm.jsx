@@ -19,18 +19,24 @@ const TodoForm = ({ addTodo }) => {
   
   return (
     <div className="todo-form">
-        <h2>Create Task</h2>
+        <h2 class="title-color">
+          <i class="fa-solid fa-square-plus"></i>
+          <span class="title">Create Task</span>
+        </h2>
 
         <form onSubmit={handleSubmit}>
             <input type="text" placeholder="Enter title" value={value} onChange={(e) => setValue(e.target.value)} />
             <select value={category} onChange={(e) => setCategory(e.target.value)}>
                 <option value="">Select a category</option>
-                <option value="Trabalho">Trabalho</option>
-                <option value="Pessoal">Pessoal</option>
-                <option value="Estudos">Estudos</option>
+                <option value="Trabalho">Work</option>
+                <option value="Pessoal">Personal</option>
+                <option value="Estudos">Studies</option>
             </select>
 
-            <button type="submit">Create task</button>
+            <button type="submit" title="Create">
+              <i class="fa-solid fa-plus"></i>
+              <span class="title">Create</span>
+            </button>
         </form>
 
     </div>

@@ -1,8 +1,22 @@
+:root{
+    --base-color: #333974;
+    --primary-color: #0D7AF6;
+    --success-color: #5CB85C;
+    --secundary-color: #FFF;
+    --danger-color: #D9534F;
+    --neutral-color1: #F5F5F5;
+    --neutral-color2: #ddd;
+    --info-color1: #555;
+    --info-color2: #888;
+    --info-color3: #333;
+}
+
+
 body {
     font-family: Arial, sans-serif;
-    background-image: radial-gradient(circle, #43CD80 0%, #1E90FF 100%);
+    background-image: radial-gradient(circle, var(--info-color2) 0%, var(--info-color3) 100%);
     padding: 30px;
-    color: #333;
+    color: var(--info-color3);
 }
 
 .app {
@@ -10,7 +24,7 @@ body {
     margin: 0 auto;
     padding: 0.5rem 2rem;
     border-radius: 10px;
-    background-color: #F5F5F5;
+    background-color: var(--neutral-color1);
 }
 
 h1 {
@@ -32,11 +46,11 @@ input {
 .todo-list {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid var(--info-color1);
 }
 
 .todo {
-    background-color: #fff;
+    background-color: var(--secundary-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
     margin-bottom: 10px;
@@ -48,12 +62,12 @@ input {
 
 .todo .category {
     font-size: 0.8em;
-    color: #888;
+    color: var(--info-color1);
 }
 
 button {
-    background-color: #333974;
-    color: #fff;
+    background-color: var(--base-color);
+    color: var(--secundary-color);
     padding: 5px 10px;
     border: none;
     border-radius: 3px;
@@ -68,20 +82,20 @@ button:hover {
 }
 
 button.complete {
-    background-color: #5cb85c;
-    color: #fff;
+    background-color: var(--success-color);
+    color: var(--secundary-color);
 }
 
 button.remove {
-    background-color: #d9534f;
-    color: #fff;
+    background-color: var(--danger-color);
+    color: var(--secundary-color);
 }
 
 input[type="text"],
 select {
     padding: 5px;
     margin-bottom: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--neutral-color2);
     border-radius: 3px;
     width: 100%;
 }
@@ -92,7 +106,7 @@ select {
 
 .filter,
 .search {
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid var(--info-color);
     margin-bottom: 1rem;
     padding-bottom: 1rem;
 }
@@ -105,4 +119,16 @@ select {
 
 .filter-options div {
     flex: 1 1 0;
+}
+
+.title {
+    margin-left: 3px;
+}
+
+.title-color {
+    color: var(--primary-color);
+}
+
+.sub-title {
+    font-weight: 700;
 }
