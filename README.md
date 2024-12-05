@@ -4,6 +4,8 @@
 
 Repository with a web application to simulate a  `to-do list` using `React` allowing the user to add and finalize a list of tasks.
 
+Application URL: [to-do-list](https://pauloalves8039.github.io/react-todo-list/) 
+
 ## ✔️ Resources Used
 
 - `HTML`
@@ -11,6 +13,7 @@ Repository with a web application to simulate a  `to-do list` using `React` allo
 - `JavaScript`
 - `React`
 - `Vite`
+- `Deploy - GitHub Pages`
 
 ## :floppy_disk: Clone Repository
 
